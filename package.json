@@ -1,0 +1,31 @@
+{
+  "name": "request-service",
+  "version": "1.0.0",
+  "description": "jquery ajax provider",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && npm install && webpack --config ./configs/webpack/webpack.config.js",
+    "onlybuild": "webpack --config ./configs/webpack/webpack.config.js",
+    "clean": "node remove.js node_modules package-lock.json",
+    "build:dev": "webpack --watch --config ./configs/webpack/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "mini-css-extract-plugin": "^0.4.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.2",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
