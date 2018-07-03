@@ -9,7 +9,7 @@
     "onlybuild": "webpack --config ./configs/webpack/webpack.config.js",
     "clean": "node remove.js node_modules package-lock.json",
     "build:dev": "webpack --watch --config ./configs/webpack/webpack.config.js",
-    "prepublish": "npm run onlybuild"
+    "prepublish": "echo hello && npm run onlybuild"
   },
   "author": "",
   "license": "ISC",
